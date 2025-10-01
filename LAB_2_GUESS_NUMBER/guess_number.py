@@ -66,7 +66,3 @@ def guess_number(target: int, chooserange: list, type: str) -> list[int, int | N
         return [target, None] # Число не найдено
     return [target, None] # Пользователь указал неизвестный тип поиска
 
-
-main()
-
-# сделать тесты и прокомментировать
