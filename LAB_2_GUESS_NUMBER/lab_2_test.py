@@ -1,5 +1,6 @@
 import unittest  # Импорт встроенного модуля для unit-тестирования
-import guess_number
+import guess_number # Импорт пользовательского модуля для тестирования
+
 
 
 # Тесты
@@ -72,3 +73,4 @@ class TestGuessNumber(unittest.TestCase):
 # Запуск тестов
 if __name__ == '__main__':
     unittest.main(argv=[''], verbosity=2, exit=False)
+
