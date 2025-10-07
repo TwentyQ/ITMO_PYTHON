@@ -34,4 +34,5 @@ def gen_bin_tree(height: int = 6, root: int = 5) -> Dict[str, Any]:
 
         # Правая ветка: уменьшаем высоту, вычисляем новое значение
         "right": gen_bin_tree(height - 1, right_child)
+
     }
