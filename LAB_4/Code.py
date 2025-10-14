@@ -26,7 +26,7 @@ def fact_iterative(n: int) -> int:
 
 def benchmark(func, n, repeat=100):
     """Возвращает среднее время выполнения func(n)"""
-    times = timeit.repeat(lambda: func(n), number=100, repeat=repeat)
+    times = timeit.repeat(lambda: func(n), number=1, repeat=repeat)
     return min(times)
 
 
@@ -72,3 +72,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
