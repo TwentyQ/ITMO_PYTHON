@@ -2,8 +2,8 @@ from typing import Dict, Any, List
 
 
 def gen_bin_tree(height: int = 6, root: int = 5,
-                 left_branch=lambda l_r: l_r,
-                 right_branch=lambda r_r: r_r) -> Dict[str, Any]:
+                 left_branch=lambda l_r: l_r ** 2,
+                 right_branch=lambda r_r: r_r - 2) -> Dict[str, Any]:
     """
     Нерекурсивное построение бинарного дерева.
 
@@ -69,6 +69,7 @@ def gen_bin_tree(height: int = 6, root: int = 5,
 
     # Возвращаем корневой узел, который содержит всё дерево
     return tree
+
 
 
 
