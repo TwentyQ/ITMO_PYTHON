@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>{{ myapp }}</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">{{app_name}}</a>
+        <div class="navbar-nav">
+            {% for item in navigation %}
+            <a class="nav-link" href="{{ item.href }}">{{ item.caption }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h1>Главная страница</h1>
+    <p class="fs-4">Это учебный проект по созданию клиент-серверных приложений на Python.</p>
+
+
+    <div class="col-md-4 mt-5">
+        <div class="card">
+            <div class="card-body text-center">
+                <h6>Автор: {{author_name}}</h6>
+                <p class="mb-1">Группа: {{group}}</p>
+                <p class="text-muted mb-0">Версия: {{version}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
